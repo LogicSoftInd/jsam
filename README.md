@@ -8,23 +8,23 @@ being able to send requests and parse responses. In order to do this, in the
 statically typed world, we need to create structures that represent each
 request/response pair that we're handling.
 
-Hand coding the classes becomes tedious very fast and that's when we ended up
-finding the great [json2csharp](http://json2csharp.com/) tool, that when given
-a json, will spit out a set of classes that represent the structure of that
-json -- Simple enough.
+Hand coding the classes becomes _very_ tedious _very_ fast. Enough thanks can't be
+said to Jon Keith for making the great [json2csharp](http://json2csharp.com/)
+tool, that when given a json, will spit out a set of classes that represent the
+structure of that json -- Simple and beautiful.
 
 (Aside: It looks as if json2csharp is joining forces with
 [Quicktype](https://quicktype.io/) and a quick look at Quicktype says that they
-support a much more wider variety of languages; kudos!)
+support a much more wider variety of languages; kudos, Jon!)
 
-So given a json, getting a scaffolding containing C#/Java classes isn't
+So given a json, getting a set of class scaffolding in C#/Java/et al. isn't
 difficult. So what's the real problem?
 
 The real problem comes when the json is **huge**. When it is huge, we run into the
 natural browser limits of pasting text more than a few MB and we are forcing
 quicktype / json2csharp to process that info for us.
 
-Enter jsam.
+**Enter jsam.**
 
 jsam is a simple and fast json sampler. The aim of jsam is to give you **just
 enough** a json that can be thrown to quicktype or json2csharp to generate the
