@@ -8,7 +8,7 @@ being able to send requests and parse responses. In order to do this, in the
 statically typed world, we need to create structures that represent each
 request/response pair that we're handling.
 
-Hand coding the classes becomes _very_ tedious _very_ fast. Enough thanks can't be
+Hand coding the classes becomes _very_ tedious. Enough thanks can't be
 said to Jon Keith for making the great [json2csharp](http://json2csharp.com/)
 tool, that when given a json, will spit out a set of classes that represent the
 structure of that json -- Simple and beautiful.
